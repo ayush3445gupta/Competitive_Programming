@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;void solve(){    ll n,k;    cin>>n>>k;    if(n==k){        cout<<1<<'\n';        cout<<n<<'\n';        return;    }    cout<<3<<'\n';    cout<<k<<" "<<k<<" "<<3*n-2*k<<'\n'; } int main(){solve();     return 0;}
