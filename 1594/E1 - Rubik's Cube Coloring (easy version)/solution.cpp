@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;const ll INF = 1e9+7;ll power(ll a,ll b){    if(b==0)return 1;    ll half_power = power(a,b/2);    if(b&1)return( half_power*half_power*a)%INF;    return (half_power*half_power)%INF;}void solve(){    ll n;    cin>>n;    ll b=(1ll<<n)-2;    cout<<(6*power(4,b))%INF<<'\n';} int main(){solve();    return 0;}
