@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;void solve(){    ll n;    cin>>n;    string s;    cin>>s;    ll cnt=1;    for (ll i = 0; i < 2*n-1; i++)    {        if(s[i]=='(' && s[i+1]=='(')cnt++;    }    cout<<cnt<<'\n';} int main(){ll t;cin>>t;while (t--){    solve();}     return 0;}
