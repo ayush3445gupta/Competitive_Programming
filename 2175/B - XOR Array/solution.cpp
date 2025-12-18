@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;void solve(){    int n,l,r;    cin>>n>>l>>r;    int p[n+1];    for (int i = 0; i <=n; i++)    {        if(i==r)p[i]=p[l-1];        else p[i]=i;    }        for (int i = 0; i < n; i++)    {        cout<<(p[i+1]^p[i])<<" ";    }    cout<<'\n';        } int main(){ll t;cin>>t;while (t--){    solve();}     return 0;}
