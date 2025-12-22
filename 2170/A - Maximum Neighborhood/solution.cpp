@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;void f(ll n,vector<ll>&a){    for(ll i=0;i<n;i++)cin>>a[i];}void solve(){    ll n;    cin>>n;    ll a=n*n-1,b=n*n-(1+n);    if(n==1)cout<<1<<'\n';    else if (n==2)cout<<9<<'\n';    else cout<<max(3*a+b,a+4*b-n)<<'\n';} int main(){ll t;cin>>t;while (t--){    solve();}     return 0;}
