@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;void solve(){    int n;    cin>>n;    int k=n/2;    if(n&1) cout<<(k+1)*(k+2)*2;    else cout<<(k+1)*(k+1);    cout<<'\n';}int main(){ios::sync_with_stdio(0);cin.tie(0);solve();    return 0;}
