@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll; void solve(){    ll n;    cin>>n;    ll ans=0,i=1;;    while (n/i)    {        ans+=(n/i);        i*=2;    }    cout<<ans<<'\n';} int main(){ios::sync_with_stdio(0);cin.tie(0);ll t;cin>>t;while (t--){    solve();}     return 0;}
