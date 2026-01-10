@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;void f(ll n,vector<ll>&a){    for(ll i=0;i<n;i++)cin>>a[i];}void solve(){    int L,v,l,r;    cin>>L>>v>>l>>r;    int ans=L/v;    if(l%v!=0)l=v*(1+l/v);    r=v*(r/v);    int n=1+(r-l)/v;    cout<<ans-n<<'\n';} int main(){ios::sync_with_stdio(0);cin.tie(0);ll t;cin>>t;while (t--){    solve();}     return 0;}
