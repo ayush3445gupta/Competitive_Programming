@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;typedef long long ll;void solve(){    int n,k;    cin>>n>>k;    for (int i = k-1; i>=1; i--)    {        if(n%i==0){            int val=k*(n/i)+i;            cout<<val<<'\n';            break;        }    }    }int main(){ios::sync_with_stdio(0);cin.tie(0);solve();     return 0;}
